@@ -1,0 +1,94 @@
+* {
+    font-family: tahoma;
+    box-sizing: border-box;
+}
+body {
+    margin: 0px 80px;
+    padding: 0;
+}
+/* TOP SECTION */
+
+/* Logo */
+div.div-logo {
+    display: block;
+    padding: 20px 34px;
+    background-color: #7c7c7c;
+   
+}
+h1.logo {
+    display: inline-block;
+    color: black;
+    background-color: #75dfb2;
+    padding: 25px 50px;
+    font-size: 45px;
+    font-weight: 300;
+}
+
+/* Navigation Bar */
+
+ul.nav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #75dfb2;
+}
+ul.nav li {
+    float: left;
+}
+ul.nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+ul.nav li a:hover {
+    background: #7c7c7c;
+}
+
+/* MIDDLE SECTION */
+
+/* Two unequal columns that float next to each other */
+.column {
+    float: left;
+    padding: 10px;
+}
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+/* Responsive layout - makes the columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .column.side, .column.middle {
+        width: 100%;
+    }
+}
+
+
+/* Left Middle */
+.column.middle {
+    width: 70%;
+    height: 500px;
+    background-color: lightgray;
+}
+/* Right Middle */
+.column.side {
+    width: 30%;
+    height: 500px;
+    background-color: #7c7c7c;
+}
+.column.side ul li a {
+    text-decoration: none;
+    color: lightgray;
+}
+
+/* FOOTER */
+div.footer {
+    text-align: left;
+    background-color: #3c93bd;
+    padding: 12px;
+    opacity: 0.8;
+}
